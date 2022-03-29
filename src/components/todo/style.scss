@@ -1,0 +1,35 @@
+* {
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	color: hsl(235, 19%, 35%);
+	font-weight: 600;
+}
+
+div#checked {
+	background: linear-gradient(0.35turn, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+span#checked {
+	color: rgba(0, 0, 0, 0.438);
+	text-decoration: line-through;
+}
+div#dark span#checked {
+	color: hsl(233, 14%, 35%);
+	text-decoration: line-through;
+}
+div#dark {
+	background: hsl(235, 24%, 19%);
+	border-color: hsl(233, 14%, 25%);
+	span {
+		color: hsl(234, 39%, 85%);
+	}
+}
+img[alt="todoCloseIcon"] {
+	display: none;
+}
+div.todo:hover img[alt="todoCloseIcon"] {
+	display: flex;
+}

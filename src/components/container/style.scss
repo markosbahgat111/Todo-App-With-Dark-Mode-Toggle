@@ -1,0 +1,54 @@
+* {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+main {
+	background: url("../../assets/images/bg-desktop-light.jpg") no-repeat;
+	background-size: contain;
+	background-color: hsl(236, 33%, 92%);
+}
+main#dark {
+	background: url("../../assets/images/bg-desktop-dark.jpg") no-repeat;
+	background-size: contain;
+	background-color: hsl(235, 21%, 11%);
+}
+
+div.todos span {
+	color: hsl(235, 19%, 35%);
+}
+div.essentials button {
+	color: hsl(233, 11%, 84%);
+}
+div.essentials button:hover {
+	color: hsl(235, 19%, 35%);
+}
+
+div.essentials#dark button {
+	color: hsl(233, 14%, 35%);
+}
+div.essentials#dark button#active {
+	color: hsl(220, 98%, 61%);
+}
+div.essentials button#active {
+	color: hsl(220, 98%, 61%);
+}
+main#dark button:hover {
+	color: hsl(234, 39%, 95%);
+}
+
+@media screen and (max-width: 1024px) {
+	main {
+		background: url("../../assets/images/bg-mobile-light.jpg") no-repeat;
+		background-size: contain;
+		background-color: hsl(236, 33%, 92%);
+	}
+	main#dark {
+		background: url("../../assets/images/bg-mobile-dark.jpg") no-repeat;
+		background-size: contain;
+		background-color: hsl(235, 21%, 11%);
+	}
+}

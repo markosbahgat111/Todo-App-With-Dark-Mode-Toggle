@@ -1,0 +1,16 @@
+div#dark {
+	background: hsl(235, 24%, 19%);
+	color: hsl(236, 33%, 92%);
+}
+div#dark input {
+	background: transparent;
+}
+div#dark img {
+	filter: none;
+	-webkit-filter: none;
+}
+div#dark img[alt="closeIcon"] {
+	padding: 2px;
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
+}
